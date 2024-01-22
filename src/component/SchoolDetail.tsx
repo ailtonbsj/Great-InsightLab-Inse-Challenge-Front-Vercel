@@ -6,9 +6,10 @@ import { Button } from "primereact/button";
 import { Chart } from "primereact/chart";
 import './SchoolDetail.css';
 import { getLevel, locationNames, typeNetNames } from '../utils';
+import { SchoolRawData } from '../domain/SchoolRawData';
 
 function SchoolDetail() {
-    const [school, setSchool] = useState({});
+    const [school, setSchool] = useState({} as SchoolRawData);
     const [chartData, setChartData] = useState({});
     const [chartOptions, setChartOptions] = useState({});
 
